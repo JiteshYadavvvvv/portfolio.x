@@ -181,12 +181,12 @@
                 <a href="#about" class="nav-link">About</a>
                 <a href="#experience" class="nav-link">Journey</a>
                 <a href="#skills" class="nav-link">Skills</a>
-                <a href="#" target="_blank" class="nav-lazyfire" title="Nagrik-eye - Project">
-                    <img src="image/lazyfire-logo.svg" alt="Nagrik-eye" class="lazyfire-logo" width="28" height="28">
-                    <span class="nav-lazyfire-text">Nagrik-eye</span>
+                <a href="https://nagrik-eye.vercel.app/" target="_blank" class="nav-project-link nav-project-link-nagrikeye" title="NagrikEye - Civic Action Platform">
+                    <img src="image/nagrik.svg" alt="NagrikEye" class="project-link-logo" width="28" height="28">
+                    <span class="project-link-text">NagrikEye</span>
                 </a>
-                <a href="#" target="_blank" class="nav-lazyfire nav-hypergrep" title="Nexus - Project">
-                    <span class="nav-lazyfire-text">Nexus</span>
+                <a href="https://sync-ait.vercel.app/" target="_blank" class="nav-project-link nav-project-link-nexus" title="Nexus - Club Ecosystem">
+                    <span class="project-link-text">Nexus</span>
                 </a>
                 <a href="#contact" class="nav-cta">Get in Touch!</a>
                 <button id="theme-toggle" class="theme-toggle-nav" aria-label="Toggle theme">
@@ -589,23 +589,23 @@
         </section>
 
         <section class="section section-compact" id="projects">
-            <div class="creator-showcase">
+                <div class="project-showcase">
                 <p class="creator-label">Creator of</p>
-                <div class="creator-projects-grid">
-                    <div class="creator-item">
-                        <a href="#" target="_blank" class="creator-project">
-                            <img src="image/lazyfire-logo.svg" alt="Nexus" class="creator-logo" width="80" height="80">
-                            <span class="creator-name">Nexus</span>
+                <div class="project-cards-grid">
+                    <div class="project-card-item">
+                        <a href="https://nagrik-eye.vercel.app/" target="_blank" class="project-card project-card-nagrikeye">
+                            <img src="image/nagrik.svg" alt="NagrikEye" class="project-card-logo" width="80" height="80">
+                            <span class="project-card-title">NagrikEye</span>
                         </a>
-                        <p class="creator-tagline">A CLI tool for lazy developers. Built with Go.</p>
-                        <a href="#" target="_blank" class="creator-github"><i class="fab fa-github"></i> Check it out</a>
+                        <p class="project-card-description">An AI-driven civic action platform for reporting local issues, tracking complaints, and improving public accountability.</p>
+                        <a href="https://github.com/MyTricks-code/NagrikEye" target="_blank" class="project-card-github"><i class="fab fa-github"></i> Check it out</a>
                     </div>
-                    <div class="creator-item">
-                        <a href="#" target="_blank" class="creator-project">
-                            <span class="creator-name" style="font-size: 2.5rem;">{ } Nagrik Eye</span>
+                    <div class="project-card-item">
+                        <a href="https://sync-ait.vercel.app/" target="_blank" class="project-card project-card-nexus">
+                            <span class="project-card-title project-card-title-nexus" style="font-size: 2.5rem;">{ } Nexus</span>
                         </a>
-                        <p class="creator-tagline">A codebase intelligence engine for AI agents. Built with Rust.</p>
-                        <a href="#" target="_blank" class="creator-github"><i class="fab fa-github"></i> Check it out</a>
+                        <p class="project-card-description">A campus ecosystem for discovering clubs, managing events, and connecting student communities at AIT Pune.</p>
+                        <a href="https://github.com/JiteshYadavvvvv/NEXUS" target="_blank" class="project-card-github"><i class="fab fa-github"></i> Check it out</a>
                     </div>
                 </div>
             </div>
@@ -1196,7 +1196,7 @@
         setTimeout(matrixTypingEffect, 500);
 
         // Journey Map with Leaflet
-        const initialView = { center: [18.5204, 73.8567], zoom: 12 };
+        const initialView = { center: [18.5204, 73.8567], zoom: 15 };
 
         const map = L.map('journey-map', {
             center: initialView.center,
@@ -1232,9 +1232,9 @@
 
         // Define club locations around Pune and create markers
         const locations = [
-            { key: 'GDG', coords: [18.5220, 73.8567], club: 'GDG AIT Pune', period: 'Jul 2025 - May 2026', role: 'Core Member' },
-            { key: 'OSS', coords: [18.5185, 73.8595], club: 'OSS', period: 'Jul 2025 - Nov 2025', role: 'Core Member' },
-            { key: 'DDQ', coords: [18.5204, 73.8520], club: 'DDQ', period: 'Jul 2025 - Nov 2025', role: 'Web Developer' }
+            { key: 'GDG', coords: [18.5242, 73.8567], club: 'GDG AIT Pune', period: 'Jul 2025 - May 2026', role: 'Core Member' },
+            { key: 'OSS', coords: [18.5188, 73.8624], club: 'OSS', period: 'Jul 2025 - Nov 2025', role: 'Core Member' },
+            { key: 'DDQ', coords: [18.5158, 73.8498], club: 'DDQ', period: 'Jul 2025 - Nov 2025', role: 'Web Developer' }
         ];
 
         const markers = {};
@@ -1243,8 +1243,8 @@
             const markerIcon = L.divIcon({
                 className: 'neo-marker club-marker',
                 html: `<div class="neo-marker-label">${loc.club}</div><div class="neo-marker-pin"></div>`,
-                iconSize: [120, 40],
-                iconAnchor: [60, 40],
+                iconSize: [150, 54],
+                iconAnchor: [75, 54],
                 popupAnchor: [0, -30]
             });
 
@@ -1265,7 +1265,10 @@
 
         // Draw a polyline connecting the clubs for visual interest
         const polyCoords = locations.map(l => l.coords);
-        L.polyline(polyCoords, { color: '#ff8c00', weight: 3, dashArray: '8,6' }).addTo(map);
+        L.polyline(polyCoords, { color: '#ff8c00', weight: 3, dashArray: '8,6', lineCap: 'round' }).addTo(map);
+
+        const clubBounds = L.latLngBounds(polyCoords);
+        map.fitBounds(clubBounds.pad(0.35));
 
         // Add click handlers to timeline items
         document.querySelectorAll('.timeline-item-flat').forEach(item => {
