@@ -1592,6 +1592,15 @@ body[data-theme="dark"] .stat-number {
     padding: 1rem;
     box-shadow: 3px 3px 0 var(--border);
     height: 400px;
+    transform: none !important;
+    z-index: 1 !important;
+    overflow-y: auto !important;
+  }
+
+  .journey-timeline-back {
+    display: none !important;
+    transform: none !important;
+    z-index: 0 !important;
   }
 
   .timeline-header {

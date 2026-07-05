@@ -1013,7 +1013,16 @@
             if (!journeyTimeline || !journeyTimelineBack) return;
 
             // Only run animation on desktop
-            if (window.innerWidth < 769) return;
+            if (window.innerWidth < 769) {
+                // Reset any inline desktop flip styles when entering mobile view.
+                journeyTimeline.style.transform = 'none';
+                journeyTimelineBack.style.transform = 'none';
+                journeyTimeline.style.zIndex = '1';
+                journeyTimelineBack.style.zIndex = '0';
+                journeyTimeline.style.overflowY = 'auto';
+                journeyTimelineData.hasStarted = false;
+                return;
+            }
 
             const scrollY = window.scrollY;
             const windowHeight = window.innerHeight;
