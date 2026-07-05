@@ -884,20 +884,7 @@ ${this.wrapWithColor("Technologies used:", "#00ffff")} ${this.wrapWithColor(
       "#87cefa"
     )}
 
-<span style="color: #00ffff;">GROUP OF COMPANIES | Software Engineer</span>
-${this.wrapWithColor(
-  "Mar 2015 – Feb 2017 | Tirana, Albania | 5-30 employees",
-  "#ffffff"
-)}
-
-• ${this.wrapWithColor("Software developer", "#ffa07a")} - ${this.wrapWithColor(
-      "Developed web and native projects",
-      "#ffffff"
-    )}
-• ${this.wrapWithColor("Bar management app", "#ffa07a")} - ${this.wrapWithColor(
-      "Developed app for bar/restaurant management.",
-      "#ffffff"
-    )}
+ 
 • ${this.wrapWithColor(
       "Bank system optimisation",
       "#ffa07a"
@@ -1013,11 +1000,11 @@ ${this.wrapWithColor("│", "#ff8c00")} ${this.wrapWithColor(
     )} ${this.wrapWithColor("│", "#ff8c00")}
 ${this.wrapWithColor("└────────────────────────────────────────┘", "#ff8c00")}
 
-${this.wrapWithColor("✉", "#ff8c00")}  ${this.wrapWithColor(
+    ${this.wrapWithColor("✉", "#ff8c00")}  ${this.wrapWithColor(
       "Email:",
       "#ff8c00"
     )} ${this.wrapWithColor(
-      '<a href="mailto:marjoballabani@gmail.com" style="color: #ffffff; text-decoration: none;">marjoballabani@gmail.com</a>',
+      '<a href="#" style="color: #ffffff; text-decoration: none;">contact</a>',
       "#ffffff"
     )}
 
@@ -1025,7 +1012,7 @@ ${this.wrapWithColor("🌐", "#ff8c00")}  ${this.wrapWithColor(
       "Website:",
       "#ff8c00"
     )} ${this.wrapWithColor(
-      '<a href="https://marjoballabani.me" target="_blank" style="color: #ffffff; text-decoration: none;">marjoballabani.me</a>',
+      '<a href="https://jiteshyadav.me" target="_blank" style="color: #ffffff; text-decoration: none;">jiteshyadav.me</a>',
       "#ffffff"
     )}
 
@@ -1033,7 +1020,7 @@ ${this.wrapWithColor("⚡", "#ff8c00")}  ${this.wrapWithColor(
       "Github:",
       "#ff8c00"
     )} ${this.wrapWithColor(
-      '<a href="https://github.com/marjoballabani" target="_blank" style="color: #ffffff; text-decoration: none;">github.com/marjoballabani</a>',
+      '<a href="https://github.com/jiteshyadav" target="_blank" style="color: #ffffff; text-decoration: none;">github.com/jiteshyadav</a>',
       "#ffffff"
     )}
 
@@ -1041,7 +1028,7 @@ ${this.wrapWithColor("💼", "#ff8c00")}  ${this.wrapWithColor(
       "LinkedIn:",
       "#ff8c00"
     )} ${this.wrapWithColor(
-      '<a href="https://linkedin.com/in/marjo-ballabani" target="_blank" style="color: #ffffff; text-decoration: none;">linkedin.com/in/marjo-ballabani</a>',
+      '<a href="https://linkedin.com/in/jiteshyadav" target="_blank" style="color: #ffffff; text-decoration: none;">linkedin.com/in/jiteshyadav</a>',
       "#ffffff"
     )}
 
@@ -1838,7 +1825,7 @@ ${this.wrapWithColor("╰──────────────────�
 
     // Add terminal title
     const terminalTitle = document.createElement("div");
-    terminalTitle.textContent = "marjo@ballabani: ~/interactive-resume";
+    terminalTitle.textContent = "jitesh@portfolio: ~/interactive-resume";
     terminalTitle.style.color = "#f8f8f2";
     terminalTitle.style.fontSize = "12px";
     terminalTitle.style.fontFamily = "'Fira Code', monospace";
@@ -2027,7 +2014,7 @@ ${this.wrapWithColor("╰──────────────────�
     urlContainer.style.textAlign = "center";
 
     const url = document.createElement("div");
-    url.textContent = "marjoballabani.me";
+    url.textContent = "jiteshyadav.me";
     url.style.color = "#87cefa";
     url.style.fontSize = "12px";
     url.style.fontFamily = "'Fira Code', monospace";
